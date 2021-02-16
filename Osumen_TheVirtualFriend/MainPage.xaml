@@ -13,7 +13,7 @@
 
         <Grid>
             <control:DropShadowPanel BlurRadius="50" ShadowOpacity="0.3" Color="Black" HorizontalContentAlignment="Stretch">
-                <Grid Padding="0,0,0,0" Background="#ffffff" CornerRadius="40,40,40,40" Grid.RowSpan="6">
+                <Grid Padding="0,0,0,0" Background="#ffffff" CornerRadius="20,20,20,20" Grid.RowSpan="6">
                     <Grid Background="#FFFFFF">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
@@ -33,21 +33,33 @@
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="10" />
-                                <ColumnDefinition Width="150" />
-                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="160" />
+
 
                             </Grid.ColumnDefinitions>
 
-                            <local:JournalSVGRoundPanelCustomControl Grid.Row="1" Grid.Column="1" Margin="0,0,20,0" Width="110" HorizontalAlignment="Right"/>
+                            <control:DropShadowPanel Margin="10,10,10,10" Grid.Column="1" Grid.Row="1" BlurRadius="30.0" ShadowOpacity="0.1" OffsetX="0.0" OffsetY="0.0" Color="Black" VerticalAlignment="Top">
+                                <Button Background="{StaticResource NavigationItemBackground}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="180,180,180,180" >
+                                    <Image Source="/Assets/pictures.svg" Margin="10,10,10,10" />
+                                </Button>
+                            </control:DropShadowPanel>
 
-                            <local:JournalSVGRoundPanelCustomControl Grid.Row="2" Grid.Column="1" Margin="0,0,20,0" Width="110" HorizontalAlignment="Right"/>
-                            <local:JournalSVGRoundPanelCustomControl Grid.Row="3" Grid.Column="1" Margin="0,0,0,0" Width="110" />
-                            <local:JournalSVGRoundPanelCustomControl Grid.Row="4" Grid.Column="1" Margin="0,0,0,0" Width="110"  />
+                            <control:DropShadowPanel Margin="10,10,10,10" Grid.Column="1" Grid.Row="2" BlurRadius="30" ShadowOpacity="0.1" Color="Black" VerticalAlignment="Top">
+                                <Button Background="{StaticResource NavigationItemBackground}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="180,180,180,180" >
+                                    <Image Source="/Assets/happy.svg" Margin="10,10,10,10" ></Image>
+                                </Button>
+                            </control:DropShadowPanel>
+                            <control:DropShadowPanel Margin="10,10,10,10" Grid.Column="1" Grid.Row="3" BlurRadius="30" ShadowOpacity="0.1" Color="Black" VerticalAlignment="Top">
+                                <Button Background="{StaticResource NavigationItemBackground}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="180,180,180,180" >
+                                    <Image Source="/Assets/play-button.png"  Margin="10,10,10,10" />
+                                </Button>
+                            </control:DropShadowPanel>
+                            <control:DropShadowPanel Margin="10,10,10,10" Grid.Column="1" Grid.Row="4" BlurRadius="30" ShadowOpacity="0.1" Color="Black" VerticalAlignment="Top">
+                                <Button Background="{StaticResource NavigationItemBackground}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="180,180,180,180" >
+                                    <Image Source="/Assets/microphone.png"  Margin="10,10,10,10" />
+                                </Button>
+                            </control:DropShadowPanel>
 
-                            <Image Source="/Assets/pictures.svg" Grid.Column="1" Grid.Row="1" Width="70"/>
-                            <Image Source="/Assets/happy.svg" Grid.Column="1" Grid.Row="2" Width="70"/>
-                            <Image Source="/Assets/play-button.png" Grid.Column="1" Grid.Row="3" Width="70"/>
-                            <Image Source="/Assets/microphone.png" Grid.Column="1" Grid.Row="4" Width="65"/>
 
 
 
