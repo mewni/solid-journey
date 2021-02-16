@@ -12,10 +12,10 @@
 
     <Grid Margin="10,10,10,10">
         <control:DropShadowPanel BlurRadius="50" ShadowOpacity="0.3" Color="Black" HorizontalContentAlignment="Stretch">
-            <Grid Margin="0,0,0,0" Background="Pink" CornerRadius="40,40,40,40">
+            <Grid Margin="0,0,0,0" Background="Pink" CornerRadius="20,20,20,20">
                 <Grid Background="Pink">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="60" />
+                        <RowDefinition Height="40" />
                         <RowDefinition Height="270" />
 
                     </Grid.RowDefinitions>
@@ -44,7 +44,7 @@
 
                     <Grid Grid.Row="0" Grid.ColumnSpan="3">
                         <control:DropShadowPanel BlurRadius="50" ShadowOpacity="0.25" Color="Black" HorizontalContentAlignment="Stretch" Margin="0,0,0,0">
-                            <Grid Background="Pink" CornerRadius="40,40,40,40" Margin="0,0,0,-10">
+                            <Grid Background="Pink" CornerRadius="20,20,20,20" Margin="0,0,0,-10">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="20" />
                                     <ColumnDefinition Width="*" />
@@ -67,7 +67,9 @@
 
 
 
-                                <Image Source="/Assets/brush.svg" Grid.Column="1" Width="20" Margin="0,0,0,0"/>
+                                <Button  Grid.Column="1" Width="20" Margin="0,0,0,0">
+                                    <Image Source="/Assets/brush.svg" Stretch="UniformToFill"/>
+                                </Button>
                                 <Button Content="22" Grid.Column="2" Margin="0,0,0,0" Background="Pink" />
                                 <Button  Grid.Column="3" Background="Black" CornerRadius="180" Width="20" Height="19" HorizontalAlignment="Center" />
 

@@ -25,9 +25,9 @@
                         <RowDefinition Height="20"/>
                         <RowDefinition Height="3*"/>
                     </Grid.RowDefinitions>
-                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Jan 15th 2021:Friday" FontSize="20"/>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Jan 15th 2021:Friday" FontSize="20" TextWrapping="Wrap"/>
                     <TextBlock Grid.Row="1" Grid.Column="0" Text="10:53" />
-                    <TextBlock Grid.Row="2" Grid.Column="0" Text="We had our worst one hour of our lives."/>
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="We had our worst one hour of our lives." TextWrapping="Wrap"/>
 
                     <Image x:Name="card_image" Grid.Column="1" Grid.Row="0" Grid.RowSpan="3" Source="Assets/mitzuha.jpg" Stretch="UniformToFill" />
                 </Grid>
